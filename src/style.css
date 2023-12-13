@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(232, 159, 172);
+    background-color: rgb(226, 229, 232);
     text-align: center;
     padding: 1px;
     margin: 10%;
@@ -16,20 +16,19 @@ ul{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     list-style-type: none;
-    background-color: coral;
-    border: 1px solid salmon;
+    background-color: rgb(7, 16, 17);
+    border: 1px solid rgb(24, 88, 125);
     border-width: auto;
     margin: 0;
     padding: 0;
     overflow: hidden;
     border-radius: 50px;
     justify-content: space-between;
+    color: white;
 }
 
 ul li{
 padding: 6px 17px;
-display: flex;
-display: -webkit-flex;
 }
 
 li.data-testid{
@@ -40,16 +39,17 @@ li.data-testid{
 
 textarea{
     background-color: whitesmoke;
+    border-radius: 25px;
 }
 
 button{
-    border-radius: 2px solid black;
+    border-radius: 25px;
     height: 70px;
     width: 200px;
     padding: 0;
     margin: 15px;
     font-size: 30px;
-    background-color: rgb(108, 108, 193);
-    border-color: blueviolet;
+    background-color: rgb(35, 35, 143);
+    border-color: rgb(43, 52, 226);
 
 }

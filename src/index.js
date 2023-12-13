@@ -1,3 +1,9 @@
 import analyzer from './analyzer.js';
+document.addEventListener('DOMContentLoaded', function() {
+    const textarea = document.querySelector('textarea[name="user-input"]');
+    const eraseButton = document.getElementById('reset-button');
 
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
+    eraseButton.addEventListener('click', function () {
+        textarea.value = '';
+    })
+});
