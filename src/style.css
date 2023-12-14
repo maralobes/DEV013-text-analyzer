@@ -14,32 +14,30 @@ ul{
     display: flex;
     display: -webkit-flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
     list-style-type: none;
-    background-color: rgb(7, 16, 17);
-    border: 1px solid rgb(24, 88, 125);
-    border-width: auto;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 50px;
-    justify-content: space-between;
     color: white;
 }
 
-ul li{
-padding: 6px 17px;
-}
+li{
+padding: 15px  40px 10px 10px;
+border: 2px solid rgb(24, 88, 125);
+background-color: rgb(92, 185, 103);
+display: block;
+text-align: center;
+border-width: 2px;
+border-radius: 15px;
+justify-content: space-between;
+overflow: hidden;
+box-sizing: border-box;
+margin: 10px;
+font: 1em sans-serif;ont-size: 12px;
 
-li.data-testid{
-   display: block;
-   text-align: center;
-   padding: 10px;
 }
 
 textarea{
     background-color: whitesmoke;
-    border-radius: 25px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 button{
@@ -49,7 +47,7 @@ button{
     padding: 0;
     margin: 15px;
     font-size: 30px;
-    background-color: rgb(35, 35, 143);
+    background-color: rgb(8, 8, 246);
     border-color: rgb(43, 52, 226);
 
 }
