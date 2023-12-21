@@ -8,19 +8,39 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 });
 
-/*Lo creé con un alert para saber que funciona, pero cuando cree las funciones para las métricas, entonces no debería desplegar nada.*/
-const textarea = document.querySelector('textarea[name="user-input"]')
-
-let datatestid = document.querySelector('data-testid')
+let textarea = document.querySelector('textarea[name="user-input"]')
 
 document.querySelector('textarea[name="user-input"]').addEventListener('input', function(evt){
+    let datatestid;
+
     const countWord= analyzer.getWordCount(textarea.value);
     datatestid = document.querySelector('li[data-testid="word-count"]');
+    console.log(datatestid)
     datatestid.innerHTML = "Palabras " + countWord;
 
-    const characterCount= analyzer.getCharacterCount(textarea.value);
+    const characterCount = analyzer.getCharacterCount(textarea.value);
     datatestid = document.querySelector('li[data-testid="character-count"]');
-    datatestid.innerHTML = "Caracteres " + characterCount;
+    console.log(datatestid)
+    datatestid.innerHTML = "Caracteres: " + characterCount;
 
+    const characterCountExclSpaces = analyzer.getCharacterCountExcludingSpaces(textarea.value);
+    datatestid = document.querySelector('li[data-testid="character-no-spaces-count"]');
+    console.log(datatestid)
+    datatestid.innerHTML = "Caracteres sin espacios: " + characterCountExclSpaces;
+
+    const wordAverageLength = analyzer.getAverageWordLength(textarea.value);
+    datatestid = document.querySelector('li[data-testid="word-length-average"]');
+    console.log(datatestid)
+    datatestid.innerHTML = "Promedio de longitud: " + wordAverageLength;
+
+    const numberCount = analyzer.getNumberCount(textarea.value);
+    datatestid = document.querySelector('li[data-testid="number-count"]');
+    console.log(datatestid)
+    datatestid.innerHTML = "Números: " + numberCount;
+
+    const numSum = analyzer.getNumberSum(textarea.value);
+    datatestid = document.querySelector('li[data-testid="number-sum"]');
+    console.log(datatestid)
+    datatestid.innerHTML = "Suma de números: " + numSum;
 });
 
