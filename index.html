@@ -9,21 +9,22 @@
 
 <body>
   <header>
-    <h1>Analizador de texto</h1>
+    <h1> <strong>Analizador de texto</strong></h1>
   </header>
   <script src="index.js" type="module"></script>
-  <textarea name="user-input" cols="30" rows="10"></textarea>
+  <p>Este analizador de texto permite contar la cantidad de palabras, caracteres con espacio y sin espacios, contar números y sumarlos, así como indicar el promedio de longitud de la palabras.</p>
+  <textarea name="user-input" cols="110" rows="15" placeholder="Escriba aquí el texto..."></textarea>
   <ul>
-    <li data-testid="word-count"></li>
-    <li data-testid="character-count"></li>
-    <li data-testid="character-no-spaces-count"></li>
-    <li data-testid="number-count"></li>
-    <li data-testid="number-sum"></li>
-    <li data-testid="word-length-average"></li>
+    <li data-testid="word-count">Palabras: 0</li>
+    <li data-testid="character-count">Caracteres: 0</li>
+    <li data-testid="character-no-spaces-count">Caracteres sin espacios: 0</li>
+    <li data-testid="number-count">Números: 0</li>
+    <li data-testid="number-sum">Suma de números: 0</li>
+    <li data-testid="word-length-average">Promedio de longitud: 0</li>
   </ul>
-  <button id="reset-button"></button>
+  <button id="reset-button"  value="clear">Borrar</button>
   <footer>
-    <p>María Villalobos Chaves</p>
+    <p><em>María Villalobos Chaves</em></p>
   </footer>
 </body>
 </html>
