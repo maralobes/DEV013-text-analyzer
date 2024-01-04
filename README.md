@@ -2,35 +2,27 @@
 
 ## Índice
 
-* [1. Consideraciones generales](#1-consideraciones-generales)
+* [1. Introducción](#1-introducción)
 * [2. Preámbulo](#2-preámbulo)
 * [3. Resumen del proyecto](#3-resumen-del-proyecto)
 * [4. Funcionalidades](#4-funcionalidades)
-* [5. Boilerplate](#5-boilerplate)
-* [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
-* [7. Pruebas](#7-pruebas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Consideraciones para pedir tu Project Feedback](#9-consideraciones-para-pedir-tu-project-feedback)
-* [10. Objetivos de aprendizaje](#10-objetivos-de-aprendizaje)
-* [11. Funcionalidades opcionales](#11-funcionalidades-opcionales)
+* [5. Diseño](#5-diseño)
+* [6. Boilerplate](#6-boilerplate)
+* [7. Criterios de aceptación mínimos del proyecto](#7-criterios-de-aceptación-mínimos-del-proyecto)
+* [8. Pruebas](#8-pruebas)
+* [9. Objetivos de aprendizaje](#9-objetivos-de-aprendizaje)
 
 ***
 
-## 1. Consideraciones generales
+## 1. Introducción
 
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 2 a 4 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
+* Este proyecto lo resolví de manera **individual**.
+* Me tomó 3 Sprints para completarlo.
+* Utilicé HTML, CSS y JavaScript para realizar el proyecto.
+* No usé ninguna librería ni framework, sino Vanilla Javascript.
+* Fue un gran reto terminarlo. Aprendí mucho no solo de código, sino también sobre mí y mis habilidades para la vida.
 
 ## 2. Preámbulo
-
-![Una lupa sobre texto de libro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
-
-_Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
 Un analizador de texto es una aplicación para extraer información útil de un
 texto utilizando diversas técnicas, como el procesamiento del lenguaje
@@ -52,47 +44,67 @@ obtener una comprensión más profunda de los textos.
 
 ## 3. Resumen del proyecto
 
-En este proyecto crearás una aplicación web que servirá para que tu usuaria
+En este proyecto cree una aplicación web que serve para que una usuaria
 pueda analizar un texto en el navegador mostrando una serie de indicadores y
-métricas específicas sobre caracteres, letras, números, etc. Que hayan sido
-enviadas como _input_ por ella. Lo harás utilizando HTML, CSS y JavaScript.
+métricas específicas sobre caracteres, letras, números, etc,  Que hayan sido
+enviadas como _input_ por ella.
 
 ## 4. Funcionalidades
 
 El listado de funcionalidades es el siguiente:
 
-1. La aplicación debe permitir a la usuaria ingresar un texto escribiéndolo
+1. La aplicación permite a la usuaria ingresar un texto escribiéndolo
 en un cuadro de texto.
 
-2. La aplicación debe calcular las siguientes métricas y actualizar el
+2. La aplicación calcula las siguientes métricas y actualiza el
 resultado en tiempo real a medida que la usuaria escribe su texto:
 
-    - **Recuento de palabras**: la aplicación debe poder contar el número de
-    palabras en el texto de entrada y mostrar este recuento a la usuaria
-    - **Recuento de caracteres**: la aplicación debe poder contar el número de
+    - **Recuento de palabras**: la aplicación cuenta el número de
+    palabras en el texto de entrada y muestra este recuento a la usuaria.
+    - **Recuento de caracteres**: la aplicación cuenta el número de
     caracteres en el texto de entrada, incluidos espacios y signos de
-    puntuación, y mostrar este recuento a la usuaria.
+    puntuación, y muestra este recuento a la usuaria.
     - **Recuento de caracteres excluyendo espacios y signos de puntuación**:
-    la aplicación debe poder contar el número de caracteres en el texto de
-    entrada, excluyendo espacios y signos de puntuación, y mostrar este recuento
+    la aplicación cuenta el número de caracteres en el texto de
+    entrada, excluye espacios y signos de puntuación y muestra este recuento
     a la usuaria.
-    - **Recuento de números**: la aplicación debe contar cúantos números hay en
-    el texto de entrada y mostrar este recuento a la usuaria.
-    - **Suma total de números**: la aplicación debe sumar todos los números que
-    hay en el texto de entrada y mostrar el resultado a la usuaria.
-    - **Longitud media de las palabras**: la aplicación debe calcular la
-    longitud media de las palabras en el texto de entrada y mostrársela a la usuaria.
+    - **Recuento de números**: la aplicación detecta cúantos números hay en
+    el texto de entrada y muestra este recuento a la usuaria.
+    - **Suma total de números**: la aplicación suma los números que
+    hay en el texto de entrada y muestra el resultado a la usuaria.
+    - **Longitud media de las palabras**: la aplicación calcula la
+    longitud media de las palabras en el texto de entrada y la muestra a la usuaria.
 
-3. La aplicación debe permitir limpiar el contenido de la caja de texto haciendo
+3. La aplicación permite limpiar el contenido de la caja de texto haciendo
 clic en un botón.
 
-![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo")
+
+## 5. Diseño
+
+Para el diseño de la aplicación se consideraron los siguientes aspectos:
+  - **Un público meta adulto y profesional
+  - **Complejidad baja en el uso de la aplicación
+  - **Visualmente amena y que invite a usarla, sin ser aburrida o muy formal.
+  - **La paleta de color se basó en una gama cromática de colores fríos: azul, blanco, negro y verde;
+  para darle un toque de formalidad, elegancia y seriedad, pues es una herramienta de trabajo. 
+  Esta paleta también busca transmitir seriedad y calma a la usuaria.
+
+Además, basado en los principios de diseño, tomé en cuenta lo siguiente: 
+ - **Generar constraste para que sea legible la información.
+ - **Usé el color #333333 en lugar de #000000 porque se lee mejor.
+ - **Busqué que hubiera una jerarquía de la información: las métricas tienen un mayor tamaño con respecto al footer.
+ - **La alineación centrada de los elementos, sobre todo que esté bien alineado para no generar ruido visual.
+ - **Cuidé el tamaño del texto y el espacio entre líneas.
+
+A continuación, muestro un prototipo de baja fidelidad de cómo se pensé la estructura de la aplicación:
+
+![Prototipo de baja fidelidad](/Users/mariavillalobos/code/DEV013-text-analyzer/prototipo.jpg)
+
+_Credito: Foto de María Villalobos Chaves
 
 ## 5. Boilerplate
 
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
+La lógica del proyecto está implementada completamente en JavaScript. No usé librerías o frameworks, solo Vanilla JavaScript.
 
 Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
 repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
@@ -121,10 +133,10 @@ El boilerplate que les damos contiene esta estructura:
 
 ### Descripción de scripts / archivos
 
-* `README.md`: debes modificarlo para explicar la información necesaria para el
-  uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones
-  de diseño que tomaron.
+* `README.md`: este archivo contiene la información necesaria para el
+  uso de mi aplicación
+  web, una introducción a la aplicación, su funcionalidad y las decisiones
+  de diseño que tomé.
 * `.github/workflows`: esta carpeta contine la configuracion para la ejecution
   de Github Actions. No debes modificar esta carpeta ni su contenido.
 * `docs/images`: contiene las imagenes de este README.
@@ -172,16 +184,6 @@ El boilerplate que les damos contiene esta estructura:
 pruebas unitarias para los métodos del objeto `analyzer`.
 
 ***
-
-#### Deploy
-
-Hacer que los sitios estén publicados (o _desplegados_) para que usuarias de
-la web puedan acceder a él es algo común en proyectos de desarrollo de software.
-
-En este proyecto, utilizaremos _Github Pages_ para desplegar nuestro sitio web.
-
-El comando `npm run deploy` puede ayudarte con esta tarea y también puedes
- consultar su [documentación oficial](https://docs.github.com/es/pages).
 
 ## 6. Criterios de aceptación mínimos del proyecto
 
@@ -439,143 +441,8 @@ usuarias en el centro**
 
 ## 7. Pruebas
 
-Este proyecto cuenta con 3 conjuntos de pruebas que te ayudarán a conocer si
-cumples los criterios mínimos de aceptación.
-
-### Pruebas unitarias
-
-Una prueba unitaria es una técnica de prueba de software en la que se comprueba
-que cada componente individual de un programa o sistema funciona correctamente
-de manera aislada. En otras palabras, se prueba cada unidad de código por
-separado para asegurarse de que cumpla con los requisitos y especificaciones.
-
-Las pruebas unitarias de este proyecto ejecutarán los métodos `getWordCount`,
-`getCharacterCount`, `getCharacterCountExcludingSpaces`, `getNumbersCount`,
-`getNumbersSum` y `getAverageWordLength` con diferentes argumentos y se
-confirmará que los valores retornados sean los esperados.
-
-Puedes ejecutar estas pruebas con el comando `npm run test` como se muestra
-en la siguiente imagen:
-
-![npm run test](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650584-c8267968-d631-4fbb-b05f-458a970544b7.gif "npm run test")
-
-El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
-`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
-automáticamente antes de ejecutar las pruebas unitarias cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
-entorno (browser en este caso) y
-las [reglas recomendadas (`eslint:recommended`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí,
-usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
-
-### Pruebas de criterios mínimos de aceptación
-
-Estas pruebas analizarán tus archivos
-[`index.html`](src/index.html),
-[`index.js`](src/index.html),
-[`analyzer.js`](src/analyzer.js)
-y
-[`style.css`](src/style.css)
-para verificar que cumples con los
-[criterios minimos de aceptacion](#5-objetivos-de-aprendizaje-y-criterios-de-aceptación-mínimos-del-proyecto).
-Cada criterio esta relacionado con un objetivo de aprendizaje.
-
-Puedes ejecutar todas estas pruebas con el comando `npm run test:oas`
-como se muestra en la siguiente imagen:
-
-![npm run test oas](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650602-f0ca9170-7563-4edc-9e78-874fa012c4fd.gif "npm run test oas")
-
-Puedes ejecutar las pruebas de cada grupo de objetivos de aprendizaje de
-manera individual con los siguientes comandos:
-
-* `npm run test:oas-html`
-* `npm run test:oas-css`
-* `npm run test:oas-web-api`
-* `npm run test:oas-js`
-
-#### Pruebas end-to-end
-
-Una prueba end-to-end (E2E) es una técnica de prueba de software en la que
-se verifica el funcionamiento de todo el sistema desde el inicio hasta el
-final. En otras palabras, se prueba el flujo completo del software, simulando
-la interacción de la usuaria con la aplicación, para asegurarse de que todas
-las partes del sistema funcionan correctamente en conjunto.
-
-Puedes ejecutar estas pruebas con el comando `npm run test:e2e` como se muestra
-en la siguiente imagen:
-
-![npm run test e2e](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650622-a4da630e-8d39-4dd8-9fde-1a38c31a53e2.gif "npm run test e2e")
-
-### Github actions
-
-Este repositorio usa una GitHub Action para ejecutar automáticamente
-las pruebas unitarias, pruebas de criterios mínimos de aceptación y
-y pruebas end-to-end cada vez que se hagas un _push_ en la rama
-_main_ de tu repositorio.
-
-Puedes consultar el resultado de esta Github Action
-en la pestaña _Actions_ de tu repositorio en Github
-como se muestra en la siguiente imagen:
-
-![Github Action](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650640-a8a8ed26-6f48-4053-8b3b-7dec7e35a9f8.gif "Github Action")
-
-## 8. Pistas, tips y lecturas complementarias
-
-### Prepara tu PC para trabajar
-
-Antes de comenzar instala lo siguiente:
-
-1. [Node.js](https://nodejs.org/)
-2. [git](https://git-scm.com/download/) Si estas en Linux es muy probable que
-  ya este instalado 👀.
-  Para conocer más de git visita
-  [este enlace](https://curriculum.laboratoria.la/es/topics/scm/01-git)
-3. Un editor de código, te sugerimos [Code](https://code.visualstudio.com/)
-
-Después en [GitHub](https://github.com/):
-
-1. Crear una cuenta. Conoce más de GitHub en este
-  [link](https://curriculum.laboratoria.la/es/topics/scm/02-github/01-github)
-2. Realiza un fork de este proyecto
-3. Configura tu SSH Key  en GitHub. Puedes revisar este
-[video](https://www.youtube.com/watch?v=g0ZV-neSM7E) o
-[artículo](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-
-Luego en una [shell](https://curriculum.laboratoria.la/es/topics/shell)
-ejecuta lo siguiente. Si estas en Windows puedes usar Git Bash:
-
-1. Clona el fork en tu PC
-2. Ubica la shell en el proyecto que clonaste
-3. Instala las dependencias del proyecto con `npm install`
-4. Instala `playwright` con `npx playwright install chromium --with-deps`
-5. Para arrancar el servidor web `npm start` y dirígete a
-   `http://localhost:3000` en tu navegador.
-6. A codear se ha dicho! :rocket:
-
-### Recursos y temas relacionados
-
-Súmate al canal de Slack [#project-text-analyzer](https://claseslaboratoria.slack.com/archives/C058GP6K9NY)
-
-## 9. Consideraciones para pedir tu Project Feedback
-
-Antes de agendar tu Project Feedback con un coach, asegúrate que tu proyecto:
-
-* [ ] Cumple con todos los criterios mínimos de aceptación al ejecutar `npm run test:oas`
-* [ ] Cumple con todas las pruebas unitarias al ejecutar `npm run test`
-* [ ] Cumple con todas las pruebas _end to end_ al ejecutar `npm run test:e2e`
-* [ ] Esta libre de _errores_ de `eslint` al ejecutar `npm run test`
-* [ ] Está subido a GitHub.
-* [ ] Esta desplegado en GitHub Pages.
-* [ ] Tiene un README con la definición del producto.
-
-Recuerda que debes hacer una autoevaluación de _objetivos de aprendizaje_ y
-_life skills_ desde tu dashboard de estudiante.
-
-Si no has completado todo lo anterior, no consideramos que estás lista para
-tu sesión de Project Feedback.
+Para este proyecto, se realizaron 3 conjuntos de pruebas para conocer si la aplicación
+cumplía los criterios mínimos de aceptación. Estas pruebas fueron pruebas unitarias, e2e y pruebas de criterios mínimos de aceptación.
 
 ## 10. Objetivos de aprendizaje
 
@@ -740,22 +607,3 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 - [ ] **Diseñar en distintos niveles de fidelidad**
 
 - [ ] **Seguir los principios básicos de diseño visual**
-
-## 11. Funcionalidades opcionales
-
-Si terminaste con todas las [funcionalidades requeridas](#3-funcionalidades),
-intenta implementar las siguientes funcionalidades opcionales para
-profundizar en los objetivos de aprendizaje del proyecto:
-
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto vacía.
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo espacios.
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo caracteres de puntuación.
-
-Puedes habilitar las pruebas unitarias y en _end to end_ de estos casos
-en los archivos [test/analyzer.spec.js](test/analyzer.spec.js) y
-[read-only/test/e2e/app.spec.js](read-only/test/e2e/app.spec.js).
-También tendrás que ajustar las pruebas ya existentes de las
-funcionalidades requeridas.
