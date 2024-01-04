@@ -49,7 +49,6 @@ const analyzer = {
       const item = words[i].replace(/\.$/, '')
       if (pattern.test(item)) {
         sumaTotal = sumaTotal + parseFloat(item);
-        console.log('sumaTotal', sumaTotal)
       }
     }
 
